@@ -1,0 +1,148 @@
+{
+    "name":"Chicago and Northwestern Station",
+    "titleImg":"stop6/title.jpg",
+    "titleType":"scroll",
+    "content":[
+    {
+        "type":"row",
+        "full":true,
+        "center":{
+            "map":{
+                "center":[43.07632022157961,-89.37554236478161],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"train_station",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"train_station",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"train_station"
+                }]
+            }
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"The development of the Isthmus in the early twentieth century created transportation challenges."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "center":{
+                "fit":"cover",
+                "img":"stop6/pipeline_rail.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "lightBackground":true,
+                    "body":"More and more raw materials had to be brought into the city and finished goods had to be moved to markets in southern Wisconsin and beyond, and more coal had to be brought in to supply factories and houses with power.",
+                    "caption":"<b>Below:</b> A train transporting coal."
+                }
+            },
+            {
+                "left":{
+                    "lightBackground":true,
+                    "body":"In Madison, the Badger State Shoe Company, for example, sold some of its goods in bulk to a national distributor based in Chicago. Other companies produced agricultural tools and machines that needed to reach farms in rural areas of the Midwest."
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"The primary means through which goods are transported from factory to market have changed significantly since the early twentieth century―as have the distances they travel. But, you can still see evidence of these earlier transportation networks imprinted in the landscape."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop6/station.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"<b>Interdependencies</b>: As this historical image illustrates, the Chicago and Northwestern Train Station in downtown Madison was a nexus for travelers coming and leaving from Madison, as well as industrial goods."
+                }
+            },
+            {
+                "left":{
+                    "body":"<b>What cities do you think were connected to Madison by railroad in the early twentieth century, and how has this changed over time?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "sideLeft":"stop6/aerial_1937.jpg",
+                "sideRight":"stop6/aerial_2020.jpg"    
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"<b>Inequalities</b>: As manufacturing has been offshored to where goods can be cheaply produced, the distance in which consumer goods travel has increased.",
+                    "caption":"<b>Right:</b> Comparison of the Madison Isthmus, 1937 and 2020."
+                }
+            },
+            {
+                "left":{
+                    "body":"<b>How much farther do you think shoes produced by a transnational brand like Nike travel today compared to shoes a local manufacturer, the Badger State Shoe Company, produced in the early twentieth century, and what are the implications for the city’s transportation needs? How do you think the globalization of commodity chains has transformed the built environment you are currently standing in?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop6/bike_path.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"<b>Alternatives</b>: In recent decades, many former railroads, like the one seen in this image, have become obsolete. Madison and other cities across the world are grappling with the question of what to do with outmoded transportation infrastrures. ",
+                    "caption":"<b>Left:</b> Bike path on a former railroad route, downtown Madison."
+                }
+            },
+            {
+                "right":{
+                    "body":"<b>What opportunities do you think this creates for the city to develop alternative ways for people to move around Madison?</b>"
+                }
+            }]
+        }
+    }]
+}

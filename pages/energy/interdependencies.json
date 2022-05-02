@@ -1,0 +1,78 @@
+{
+    "name":"Energy - Interdependencies",
+    "titleImg":"stop5/title.jpg",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "body":"Most of the gas that fuels this the <a class='network-link' href='#/energy/intro'>Blount Generating Station</a> is imported via underground pipelines from Canada to the North, as well as Oklahoma and the Gulf of Mexico to the South. "
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "background":"rgba(48,48,48,1)",
+            "center":{
+                "img":"stop5/pipeline_map.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [
+            {
+                "right":{
+                    "darkBackground":true,
+                    "body":"Madison’s energy needs therefore have important implications for these sites, but also, as this map showing leakages and spillages related to those pipelines shows, people who live on land on which the <a class='network-link' href='#/energy/inequalities'>entire energy infrastructure</a> was constructed."
+                }
+            },
+            {
+                "left":{
+                    "darkBackground":true,
+                    "body":"<b>What does this tell us about our responsibilities to people in other parts of the country who are protesting the construction of new pipelines?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.07917178776996,-89.37285564506148],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"power_plant",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"power_plant",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"power_plant"
+                }]
+            }
+        }
+    }]
+}

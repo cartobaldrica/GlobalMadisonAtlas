@@ -1,0 +1,109 @@
+{
+    "name":"Badger State Shoe Company",
+    "titleImg":"stop4/title.jpg",
+    "background":"light",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "map":{
+                "center":[43.08128634666694,-89.37861838470612],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"shoe_factory",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"shoe_factory",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"shoe_factory"
+                }]
+            }
+        }
+    },
+    {
+        "type":"row",
+        "right":{
+            "img":"stop4/title.jpg"
+        },
+        "left":{
+            "body":"In recent decades, the main driver of Madison’s economy has been services, many of which support the <a class='network-link' href='#/university/intro'>university</a> and the state government. But other industries have played an important role in the development of the city too.",
+            "caption":"<b>Right:</b> Industrial shoe manufacturing, early 1900s."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "center":{
+                "img":"stop4/industrial_map.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "center":{
+                    "lightBackground":true,
+                    "body":"The Isthmus is where the first factories were established in the city in the late nineteenth century. The manufacturing sector in Madison reflected the dominant system of production of the time: Fordism.",
+                    "caption":"<b>Below:</b> Industrial map of Madison, 1929."
+                }
+            },
+            {
+                "center":{
+                    "lightBackground":true,
+                    "body":"Companies invested in the construction of large factories across the Isthmus and directly employed hundreds of assembly line workers in industries ranging from machinery to <a class='network-link' href='#/university/interdependencies'>food processing</a>."
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"The transition to a service-led or post-Fordist economy in the second half of the 20th century has overlain and altered much of the landscape. But that earlier era of manufacturing remains sedimented within the <a class='network-link' href='#/city/intro'>built environment</a> of the Isthmus."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop4/badger_state_modern.png"
+            }
+        },
+        "foreground":{
+            "blocks": [
+            {
+                "right":{
+                    "body":"This six-story building was constructed at the start of the twentieth century. Between 1910-1930, it was home to the Badger State Shoe Company. At its peak, the company employed about 250 workers – <a class='network-link' href='#/industry/interdependencies'>of whom half were women</a> – and produced roughly 2,000 pairs of shoes a day."
+                }
+            },
+            {
+                "right":{
+                    "body":"<b>How do you think the shoe factory was embedded within evolving local, regional, and global economies?</b>"
+                }
+            }]
+        }
+    }]
+}

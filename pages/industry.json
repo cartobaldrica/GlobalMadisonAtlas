@@ -1,0 +1,183 @@
+{
+    "name":"Badger State Shoe Company",
+    "titleImg":"stop4/title.jpg",
+    "background":"light",
+    "titleType":"scroll",
+    "content":[
+    {
+        "type":"row",
+        "full":true,
+        "center":{
+            "map":{
+                "center":[43.08128634666694,-89.37861838470612],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"shoe_factory",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"shoe_factory",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"shoe_factory"
+                }]
+            }
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"In recent decades, the main driver of Madison’s economy has been services, many of which support the university and the state government. But other industries have played an important role in the development of the city too."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "center":{
+                "img":"stop4/industrial_map.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "center":{
+                    "lightBackground":true,
+                    "body":"The Isthmus is where the first factories were established in the city in the late nineteenth century. The manufacturing sector in Madison reflected the dominant system of production of the time: Fordism.",
+                    "caption":"<b>Below:</b> Industrial map of Madison, 1929."
+                }
+            },
+            {
+                "center":{
+                    "lightBackground":true,
+                    "body":"Companies invested in the construction of large factories across the Isthmus and directly employed hundreds of assembly line workers in industries ranging from machinery to food processing."
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"The transition to a service-led or post-Fordist economy in the second half of the 20th century has overlain and altered much of the landscape. But that earlier era of manufacturing remains sedimented within the built environment of the Isthmus."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop4/badger_state_modern.png"
+            }
+        },
+        "foreground":{
+            "blocks": [
+            {
+                "right":{
+                    "body":"This six-story building was constructed at the start of the twentieth century. Between 1910-1930, it was home to the Badger State Shoe Company. At its peak, the company employed about 250 workers – of whom half were women – and produced roughly 2,000 pairs of shoes a day.",
+                    "caption":"<b>Left:</b> Badger State Shoe Company, located at the corner of Dayton and Blount."
+                }
+            },
+            {
+                "right":{
+                    "body":"<b>How do you think the shoe factory was embedded within evolving local, regional, and global economies?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"<b>Interdependencies</b>: Within the Badger State Shoe factory there were important social divisions of labor, in terms of who did different tasks and how they were compensated for their labor."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop4/shoe_graph.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "lightBackground":true,
+                    "body":"This graph shows that the gender pay gap for shoe factory workers across the U.S was particularly pronounced."
+                }
+            },
+            {
+                "left":{
+                    "lightBackground":true,
+                    "body":"<b>To what extent do you think gender inequalities in this shoe factory reflected wider social divisions of labor? To what extent have these dynamics persisted, even as the economy in cities like Madison has changed significantly?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "center":{
+                "img":"stop4/nike_map.png"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "lightBackground":true,
+                    "body":"<b>Inequalities</b>: The international division of labor in manufacturing has changed dramatically since the second half of the 20th century. Shoes that are sold in Madison today were more likely produced in factories in southeast Asia or South America."
+                }
+            },
+            {
+                "left":{
+                    "lightBackground":true,
+                    "body":"<b>Why do you think major brands, such as Nike, choose to have their shoes made in these locations, rather than in cities like Madison?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"<b>Alternatives</b>: In 2013, a factory located in Rana Plaza, in Bangladesh, collapsed, leading to 1,134 deaths and over 2,000 injuries. The factory was producing apparel for a range of major brands, including some that have a license to produce clothing carrying the label of universities such as UW-Madison."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop4/protests.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"This photo shows one of the protests that happened in Madison after the Rana Plaza disaster, demanding that the university cut ties with brands that refused to commit to improving working conditions in their supplier’s factories."
+                }
+            },
+            {
+                "right":{
+                    "body":"<b>How have labor politics had to adjust to the globalization of production networks?</b>"
+                }
+            }]
+        }
+    }]
+}

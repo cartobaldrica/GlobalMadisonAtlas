@@ -1,0 +1,88 @@
+{
+    "name":"Chicago and Northwestern Station",
+    "titleImg":"stop6/title.jpg",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "map":{
+                "center":[43.07632022157961,-89.37554236478161],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"train_station",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"train_station",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"train_station"
+                }]
+            }
+        }
+    },
+    {
+        "type":"row",
+        "right":{
+            "img":"stop6/title.jpg"
+        },
+        "left":{
+            "body":"The <a class='network-link' href='#/city/intro'>development of the Isthmus</a> in the early twentieth century created transportation challenges.",
+            "caption":"<b>Right:</b> Chicago and Northwestern Station, circa 1930."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "center":{
+                "fit":"cover",
+                "img":"stop6/pipeline_rail.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "lightBackground":true,
+                    "body":"More and more raw materials had to be <a class='network-link' href='#/transport/interdependencies'>brought into the city</a> and finished goods had to be moved to markets in southern Wisconsin and beyond, and more <a class='network-link' href='#/energy/intro'>coal</a> had to be brought in to supply factories and houses with power.",
+                    "caption":"<b>Below:</b> A train transporting coal."
+                }
+            },
+            {
+                "left":{
+                    "lightBackground":true,
+                    "body":"In Madison, the <a class='network-link' href='#/industry/intro'>Badger State Shoe Company</a>, for example, sold some of its goods in bulk to a national distributor based in Chicago. Other companies produced agricultural tools and machines that needed to reach farms in rural areas of the Midwest."
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"The primary means through which goods are transported from factory to market have changed significantly since the early twentieth century―as have the distances they travel. But, you can still see evidence of these <a class='network-link' href='#/transport/inequalities'>earlier transportation networks</a> imprinted in the landscape."
+        }
+    }]
+}

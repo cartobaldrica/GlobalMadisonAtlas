@@ -1,0 +1,75 @@
+{
+    "name":"Action - Alternatives",
+    "titleImg":"stop7/title.jpg",
+    "titleType":"network",
+    "content":[{
+        "type":"start",
+        "center":{
+            "body":"<a class='network-link' href='#/gentrification/intro'>State Street</a>, in downtown Madison - turned from a 4 lane street to a pedestrian mall in the mid 70s - is a nexus for <a class='network-link' href='#/gentrification/inequalities'>change</a>. During the Covid-19 pandemic, about 20% (31/150) of the businesses on State Street closed."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop7/murals.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [
+            {
+                "right":{
+                    "body":"Additionally, about half of the storefronts were <a class='network-link' href='#/gentrification/intro'>damaged</a> during Black Lives Matter Protests in 2020. Many of these storefronts became murals expressing solidarity with Madisonians who protested for social justice and equity. The protests and murals made visible histories and current experiences of <a class='network-link' href='#/city/intro#holc'>racial exclusion</a> in Madison that many residents are unaware of.",
+                    "caption":"<b>Left:</b> Black Lives Matter murals on State Street, Summer 2020"
+                }
+            },
+            {
+                "right":{
+                    "body":"<b>What role do you think political protests can play in changing the social and physical landscapes that surround us?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.07471406778965,-89.38591347037851],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"state_capitol",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"state_capitol",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"state_capitol"
+                }]
+            }
+        }
+    }]
+}

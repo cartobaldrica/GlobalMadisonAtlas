@@ -1,0 +1,98 @@
+{
+    "name":"Wisconsin Capitol",
+    "titleImg":"stop7/title.jpg",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "map":{
+                "center":[43.07471406778965,-89.38591347037851],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"state_capitol",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"state_capitol",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"state_capitol"
+                }]
+            }
+        }
+    },
+    {
+        "type":"row",
+        "left":{
+            "img":"stop7/title.jpg"
+        },
+        "right":{
+            "body":"The current state capitol, designed by Architect George Post who also designed the New York Stock Exchange building, was built between 1906 and 1917. After a fire destroyed the previous, smaller building, many thought the new 400,000-square-foot <a class='network-link' href='#/city/intro#materials'>granite building</a> was excessive.",
+            "caption":"<b>Left:</b> Insite the Wisconsin State Capitol Rotunda."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "center":{
+                "fit":"cover",
+                "img":"stop7/capitol.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [
+            {
+                "right":{
+                    "lightBackground":true,
+                    "body":"The capitol underwent major renovations, costing $140 million, between 1990 and 2001, which restored rooms to their original appearances and added modern amenities."
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"The heavily visited building, toured by over 50,000 Wisconsin school children each year, has also been home to many political actions. In 2011, tens of thousands of demonstrators protesting <a class='network-link' href='#/action/interdependencies'>'Act 10'</a>, the governor’s proposal effectively ending collective bargaining rights for public employees occupied the building and its surrounds. "
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop7/blm.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"More recently, demonstrators gathered around the capitol building and surrounding areas in support of the <a class='network-link' href='#/action/alternatives'>Black Lives Matter</a> movement, which exploded nationally in response to the killing of George Floyd, a Black man, by police in Minneapolis, MI in May 2020. Later that year, protesters again gathered when Jacob Blake was shot by police in Kenosha, WI.",
+                    "caption":"<b>Right:</b> Black Lives Matter demonstrators in Madison, May 2020"
+                }
+            }]
+        }
+    }]
+}

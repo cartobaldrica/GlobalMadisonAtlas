@@ -1,0 +1,77 @@
+{
+    "name":"Industry - Interdependencies",
+    "titleImg":"stop4/title.jpg",
+    "background":"light",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "body":"Within the Badger State Shoe factory there were important social divisions of labor, in terms of who did different tasks and how they were compensated for their labor."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop4/shoe_graph.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "lightBackground":true,
+                    "body":"This graph shows that the gender pay gap for shoe factory workers across the U.S was particularly pronounced."
+                }
+            },
+            {
+                "left":{
+                    "lightBackground":true,
+                    "body":"<b>To what extent do you think gender inequalities in this shoe factory reflected wider social divisions of labor? To what extent have these  <a class='network-link' href='#/city/intro#holc'>dynamics</a> persisted, even as the economy in cities like Madison has <a class='network-link' href='#/industry/inequalities'>changed significantly</a>?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.08128634666694,-89.37861838470612],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"shoe_factory",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"shoe_factory",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"shoe_factory"
+                }]
+            }
+        }
+    }]
+}

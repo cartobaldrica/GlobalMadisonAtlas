@@ -1,0 +1,226 @@
+{
+    "name":"Madison Map Fountain",
+    "titleImg":"stop3/title.jpg",
+    "background":"light",
+    "titleType":"scroll",
+    "content":[
+    {
+        "type":"row",
+        "full":true,
+        "center":{
+            "map":{
+                "center":[43.075671391639354,-89.38309259550543],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"map_fountain",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"map_fountain",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"map_fountain"
+                }]
+            }
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"Toward the end of the 19th century, ambitious plans were drawn up to develop Madison according to a grid-like structure fanning out from the Capitol."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop3/east_wash.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"As well as money, the development of the city required raw materials and labor power. The acquisition of these different inputs helps to underscore the idea that Madison always has been a product of broader regional and global flows.",
+                    "caption":"<b>Left:</b> View down Eash Washington Avenue in 1954."
+                }
+            },
+            {
+                "right":{
+                    "body":"Buildings throughout the city were constructed with materials and labor from across the world."
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop3/state_capitol.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"For example, the capitol building is made of rock from six different countries and seven different States.",
+                    "caption":"<b>Right:</b> Circa 1945 postcard of the Wisconsin State Capitol."
+                }
+            },
+            {
+                "left":{
+                    "body":"Some of the decorative architecture you can see on older buildings reflects the waves of migrants who arrived in the city from Germany and Scandinavia in the second half of the nineteenth century."
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"Landscapes also are shaped in ways that reflect inequalities in power between different population groups."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop3/burial_mounds.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"Processes of urbanization in the nineteenth century worked to marginalize the rich cultural histories of native populations who have lived in this area since the Isthmus first was formed ten thousand years ago.",
+                    "caption":"<b>Left:</b> Indigenous burial mounds in modern Madison."
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "center":{
+                "img":"stop3/holc_madison.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "lightBackground":true,
+                    "body":"Racism and discriminatory regulations have continued to restrict racial diversity across the city to this day."
+                }
+            },
+            {
+                "left":{
+                    "lightBackground":true,
+                    "body":"This map illustrates a process known as redlining, whereby certain parts of a city were deemed undesirable based on racist and classist assumptions. Residents in these parts of the cities would be unable to take out home loans."
+                }
+            },
+            {
+                "right":{
+                    "lightBackground":true,
+                    "body":"Modern racial divisions in cities often reflect the boundaries of redlining maps."
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"Reading the landscape means paying careful attention to these erasures, and that includes the physical geography of the city."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop3/madison_landforms.png"    
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"<b>Interdependencies</b>: The expansion of the city created a critical interdependency between the physical topography of the city and the built environment."
+                }
+            },
+            {
+                "left":{
+                    "body":"As this map shows, the isthmus neighborhood, which lies between Lake Monona and Lake Mendota, was built on top of filled marshland."
+                }
+            },
+            {
+                "left":{
+                    "body":"<b>In what ways do you think that interdependence has become more critical in recent decades?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop3/flooding.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"<b>Inequalities</b>: This image show how this precarious interdependency has led to flooding in this neighborhood, most recently in 2018.",
+                    "caption":"<b>Left:</b> Flooding on Mifflin street in 2018"
+                }
+            },
+            {
+                "right":{
+                    "body":"In Madison, and globally, some people are more vulnerable than others to the effects of flooding and other extreme climate events."
+                }
+            },
+            {
+                "right":{
+                    "body":"<b>What factors do you think are important in producing unequal degrees of vulnerability?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"<b>Alternatives</b>: One of the challenges we face in the 21st century is how to build sustainable cities that can mitigate the threats posed by climate change for everyone, rather than individualizing those risks."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop3/madison.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"<b>How can we build cities in ways that are more sustainable and resilient for all? What kinds of considerations do you think would be important today for cities that were not an issue when the isthmus neighborhood was being constructed in the late-19th century?</b>"
+                }
+            }]
+        }
+    }]
+}

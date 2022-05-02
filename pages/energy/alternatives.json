@@ -1,0 +1,77 @@
+{
+    "name":"Energy - Alternatives",
+    "titleImg":"stop5/title.jpg",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "left":{
+            "img":"stop5/windmills.jpg"
+        },
+        "right":{
+            "body":"As <a class='network-link' href='#/city/inequalities'>climate change</a> has become a more urgent political concern, there have been various efforts to support the expansion of clean energy. "
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop5/renewable_map.png"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"This map shows the proliferation of renewable energy sources in Wisconsin, most prominently through wind farms."
+                }
+            },
+            {
+                "left":{
+                    "body":"<b>What does this reveal about the <a class='network-link' href='#/transport/intro'>interconnections</a> between changing landscapes in urban and rural Wisconsin? </b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.07917178776996,-89.37285564506148],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"power_plant",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"power_plant",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"power_plant"
+                }]
+            }
+        }
+    }]
+}

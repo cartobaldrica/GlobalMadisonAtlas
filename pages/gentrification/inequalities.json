@@ -1,0 +1,56 @@
+{
+    "name":"Gentrification - Inequalities",
+    "titleImg":"stop8/title.jpg",
+    "titleType":"network",
+    "content":[{
+        "type":"start",
+        "right":{
+            "img":"stop8/state_street_map.jpg"
+        },
+        "left":{
+            "body":"<b>Why might it be easier to blame BLM protestors for destroying State Street than to confront <a class='network-link' href='#/gentrification/alternatives'>changes</a> due to <a class='network-link' href='#/gentrification/intro'>gentrification or studentification</a>?</b>"
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.07465,-89.39575],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"state_street",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"state_street",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"state_street"
+                }]
+            }
+        }
+    }]
+}

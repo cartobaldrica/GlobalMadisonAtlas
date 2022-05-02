@@ -1,0 +1,75 @@
+{
+    "name":"Industry - Alternatives",
+    "titleImg":"stop4/title.jpg",
+    "background":"light",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "body":"In 2013, a factory located in Rana Plaza, in Bangladesh, collapsed, leading to 1,134 deaths and over 2,000 injuries. The factory was producing apparel for a range of major brands, including some that have a license to produce clothing carrying the label of universities such as <a class='network-link' href='#/university/intro'>UW-Madison</a>."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop4/protests.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"This photo shows one of the <a class='network-link' href='#/action/intro'>protests</a> that happened in Madison after the Rana Plaza disaster, demanding that the university cut ties with brands that refused to commit to improving working conditions in their supplier’s factories."
+                }
+            },
+            {
+                "right":{
+                    "body":"<b>How have labor politics had to adjust to the globalization of production networks?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.08128634666694,-89.37861838470612],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"shoe_factory",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"shoe_factory",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"shoe_factory"
+                }]
+            }
+        }
+    }]
+}

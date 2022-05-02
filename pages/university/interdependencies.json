@@ -1,0 +1,97 @@
+{
+    "name":"University - Interdependencies",
+    "titleImg":"stop2/title.jpg",
+    "background":"light",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "body":"Research undertaken at UW-Madison has long played a key role in transforming society across the State and beyond."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop2/dairy_prod.png"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"At the turn of the 20th century, researchers at the University of Wisconsin studied new methods of dairy processing. Their research spurred a massive rise in the state's dairy production, molding Wisconsin's identity as 'America's Dairyland'."
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop2/steenbock.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [
+            {
+                "right":{
+                    "body":"Later, in the 1920s, Dr. Harry Steenbock developed an inexpensive method of enriching foods with Vitamin D, an innovation that would ultimately help to eradicate rickets throughout most of the world.",
+                    "caption":"<b>Right:</b> Dr. Harry Steenbock working in his lab."
+                }
+            },
+            {
+                "right":{
+                    "body":"Royalties from the patent funded the construction of a library named in his honor."
+                }
+            },
+            {
+                "right":{
+                    "body":"<b>In what other ways do you think the work that happens at the university might have <a class='network-link' href='#/university/intro'>implications</a> for other parts of the State or even the world?<b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.0757,-89.4037],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"bascom_hill",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"bascom_hill",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"bascom_hill"
+                }]
+            }
+        }
+    }]
+}

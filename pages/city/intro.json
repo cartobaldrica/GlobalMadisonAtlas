@@ -1,0 +1,159 @@
+{
+    "name":"Madison Map Fountain",
+    "titleImg":"stop3/title.jpg",
+    "background":"light",
+    "titleType":"network",
+    "content":[{
+        "type":"start",
+        "center":{
+            "map":{
+                "center":[43.075671391639354,-89.38309259550543],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"map_fountain",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"map_fountain",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"map_fountain"
+                }]
+            }
+        }
+    },
+    {
+        "type":"row",
+        "right":{
+            "img":"stop3/title.jpg"
+        },
+        "left":{
+            "body":"Toward the end of the 19th century, ambitious plans were drawn up to develop Madison according to a grid-like structure fanning out from the <a class='network-link' href='#/action/intro'>Capitol</a>.",
+            "caption":"<b>Right:</b> Madison map fountain, corner of Eash Washington and Pinckney."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop3/east_wash.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"As well as money, the development of the city required <a class='network-link' href='#/transport/intro'>raw materials</a> and <a class='network-link' href='#/industry/intro'>labor power</a>. The acquisition of these different inputs helps to underscore the idea that Madison always has been a product of <a class='network-link' href='#/industry/inequalities'>broader regional and global flows</a>.",
+                    "caption":"<b>Left:</b> View down Eash Washington Avenue in 1954."
+                }
+            },
+            {
+                "right":{
+                    "body":"Buildings throughout the city were constructed with materials and labor from across the world."
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "id":"materials",
+        "background":{
+            "right":{
+                "img":"stop3/state_capitol.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"For example, the <a class='network-link' href='#/action/intro'>capitol</a> building is made of rock from six different countries and seven different States.",
+                    "caption":"<b>Right:</b> Circa 1945 postcard of the Wisconsin State Capitol."
+                }
+            },
+            {
+                "left":{
+                    "body":"Some of the decorative architecture you can see on older buildings reflects the waves of migrants who arrived in the city from Germany and Scandinavia in the second half of the nineteenth century."
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"Landscapes also are shaped in ways that reflect <a class='network-link' href='#/city/inequalities'>inequalities</a> in power between different population groups."
+        }
+    },
+    {
+        "type":"scroll",
+        "id":"burial",
+        "background":{
+            "left":{
+                "img":"stop3/burial_mounds.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"Processes of urbanization in the nineteenth century worked to marginalize the rich cultural histories of <a class='network-link' href='#/university/inequalities'>native populations</a> who have lived in this area since the Isthmus first was formed ten thousand years ago.",
+                    "caption":"<b>Left:</b> Indigenous burial mounds in modern Madison."
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "id":"holc",
+        "background":{
+            "center":{
+                "img":"stop3/holc_madison.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "lightBackground":true,
+                    "body":"Racism and discriminatory regulations have continued to restrict <a class='network-link' href='#/action/alternatives'>racial diversity</a> across the city to this day."
+                }
+            },
+            {
+                "left":{
+                    "lightBackground":true,
+                    "body":"This map illustrates a process known as redlining, whereby certain parts of a city were deemed undesirable based on racist and classist assumptions. Residents in these parts of the cities would be unable to take out home loans."
+                }
+            },
+            {
+                "right":{
+                    "lightBackground":true,
+                    "body":"Modern racial divisions in cities often reflect the boundaries of redlining maps."
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"Reading the landscape means paying careful attention to these erasures, and that includes the <a class='network-link' href='#/city/interdependencies'>physical geography</a> of the city."
+        }
+    }]
+}

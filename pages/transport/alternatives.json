@@ -1,0 +1,71 @@
+{
+    "name":"Transport - Alternatives",
+    "titleImg":"stop6/title.jpg",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "body":"In recent decades, many <a class='network-link' href='#/transport/inequalities'>former railroads</a>, like the one seen in this image, have become obsolete. Madison and other cities across the world are grappling with the question of what to do with outmoded transportation infrastrures. "
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop6/bike_path.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [
+            {
+                "right":{
+                    "body":"<b>What opportunities do you think this creates for the city to develop alternative ways for people to move around Madison?</b>",
+                    "caption":"<b>Left:</b> Bike path on a former railroad route, downtown Madison."
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.07632022157961,-89.37554236478161],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"train_station",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"train_station",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"train_station"
+                }]
+            }
+        }
+    }]
+}

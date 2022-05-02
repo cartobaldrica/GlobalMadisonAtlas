@@ -1,0 +1,138 @@
+{
+    "name":"The Hub",
+    "titleImg":"stop8/title.jpg",
+    "titleType":"scroll",
+    "content":[{
+        "type":"row",
+        "full":true,
+        "center":{
+            "map":{
+                "center":[43.07465,-89.39575],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"state_street",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"state_street",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"state_street"
+                }]
+            }
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"The storefronts of Madison's State Street have changed dramatically over the last 20 years. While some people in Madison blamed BLM protestors for destroying businesses on State Street, its sense of place has been more drastically altered by ongoing processes of re-development, including an influx of global and national chains on several blocks, as well as the emergence of luxury student housing."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop8/hub.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"This change in housing stock is referred to as ‘gentrification’ – in the case of student-centered luxury housing it is sometimes called ‘studentification’ – and can be seen especially at the 500 block, known as the “Hub on Campus Madison”, which was completed in 2015.",
+                    "caption":"<b>Left: </b> The Hub on Campus, 500 Block of State Street"
+                }
+            },
+            {
+                "right":{
+                    "body":"A national real estate development firm called Core Spaces built and runs The Hub, as well as other nearby luxury student housing developments, including The James and ōLiv. While this area is designated by the City as a “preferred area for affordable housing”, fewer than 16% of these buildings comprise middle or low-income apartments."
+                }
+            },
+            {
+                "right":{
+                    "body":"Most rents at these properties are high, even by the Madison rental-market standards, which present challenges to many students. To fill the apartments, the Hub and other luxury student-based housing properties heavily recruit students from wealthy regions and areas of the world, including many cities across Asia."
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"<b>Interdependencies:</b> State Street is a complex landscape that necessarily serves a wide range of Madisonians, including students, staff and faculty from UW as well as concert and museum goers and shoppers from other parts of the city and state. It is also a mixed-use area, with residential and commercial properties in close proximity. "
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop8/university_inn.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"Prior to the creation of the Hub, the 500 block of State Street was home to a motel, as well as several local restaurants, as pictured.",
+                    "caption":"<b>Right: </b> 500 Block of State Street in 2014, prior to the construction of The Hub."
+                }
+            },
+            {
+                "left":{
+                    "body":"<b>Do you think State Street can serve all populations and uses equally? How can/should it balance local/regional needs (local businesses, affordable housing, transportation thoroughfare) with the demands of the global economy?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "center":{
+                "img":"stop8/state_street_map.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "lightBackground":true,
+                    "body":"<b>Inequalities:</b> Why might it be easier to blame BLM protestors for destroying State Street than to confront changes due to gentrification or studentification?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop8/state_street_pic.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"<b>Alternatives: Looking forward, how do you think State Street–and Madison more broadly–might change in the coming years? Who do you think will be the primary drivers of those changes?</b>"
+                }
+            }]
+        }
+    }]
+}

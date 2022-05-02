@@ -1,0 +1,70 @@
+{
+    "name":"Action - Inequalities",
+    "titleImg":"stop7/title.jpg",
+    "titleType":"network",
+    "content":[{
+        "type":"start",
+        "center":{
+            "body":"More recently, people have gathered to protest systemic <a class='network-link' href='#/industry/interdependencies'>injustices based on gender</a> and race. This includes the 2017 Women’s March and the <a class='network-link' href='#/action/alternatives'>Black Lives Matter</a> protests in 2020. "
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop7/womens_march.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [
+            {
+                "left":{
+                    "body":"<b>How do such protests draw attention to ongoing reproduction of internal differences and inequities within Madison? How have these inequalities been challenged or sustained by Madison’s shifting <a class='network-link' href='#/industry/inequalities'>global interdependencies</a>?</b>",
+                    "caption":"<b>Right:</b> Women's March, 2017"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.07471406778965,-89.38591347037851],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"state_capitol",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"state_capitol",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"state_capitol"
+                }]
+            }
+        }
+    }]
+}

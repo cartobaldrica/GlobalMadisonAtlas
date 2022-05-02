@@ -1,0 +1,80 @@
+{
+    "name":"University - Inequalities",
+    "titleImg":"stop2/title.jpg",
+    "background":"light",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "body":"In addition to the university – and the city – being built on <a class='network-link' href='#/city/intro#burial'>Ho Chunk land</a>, the Land-Grant College Act (or Morrill Act), passed by Congress in 1862, gave universities land that had been expropriated from indigenous communities to States to help finance the establishment of colleges."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop2/land_grab.png"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"This map shows where the land that helped develop this campus came from, as well as other land in Wisconsin that was exproproiated for the development of universitites throughout the country. "
+                }
+            },
+            {
+                "left":{
+                    "body":"These lands were obtained by the federal government through violence-backed cession, and much of it is still <a class='network-link' href='#/university/alternatives'>owned by the university</a> to this day."
+                }
+            },
+            {
+                "left":{
+                    "body":"<b>To what extent do you think the university has been a vehicle for generating regional inequalities?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.0757,-89.4037],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"bascom_hill",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"bascom_hill",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"bascom_hill"
+                }]
+            }
+        }
+    }]
+}

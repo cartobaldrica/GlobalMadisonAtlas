@@ -1,0 +1,70 @@
+{
+    "name":"City - Alternatives",
+    "titleImg":"stop3/title.jpg",
+    "background":"light",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "body":"One of the challenges we face in the 21st century is how to build sustainable cities that can mitigate the threats posed by <a class='network-link' href='#/city/inequalities'>climate change</a> for everyone, rather than individualizing those risks."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop3/madison.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"<b>How can we build cities in ways that are more <a class='network-link' href='#/energy/alternatives'>sustainable</a> and resilient for all? What kinds of considerations do you think would be important today for cities that were not an issue when the isthmus neighborhood was being constructed in the late-19th century?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.075671391639354,-89.38309259550543],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"map_fountain",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"map_fountain",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"map_fountain"
+                }]
+            }
+        }
+    }]
+}

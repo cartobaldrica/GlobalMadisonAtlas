@@ -1,0 +1,184 @@
+{
+    "name":"Blount Generating Station",
+    "titleImg":"stop5/title.jpg",
+    "titleType":"scroll",
+    "content":[
+    {
+        "type":"row",
+        "full":true,
+        "center":{
+            "map":{
+                "center":[43.07917178776996,-89.37285564506148],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"power_plant",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"power_plant",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"power_plant"
+                }]
+            }
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"The development of the isthmus also depended on increasing the supply of energy in the city. The first gaslights appeared along these streets in 1855, and the first electrical lighting arrived in the 1880s."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop5/coal_plant.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"Over the years, the city’s energy needs have been shaped by wider political-ecological crises, most notably climate change. Our changing climate and changing energy needs have created new interdependencies between Madison and other economies and ecologies around the world.",
+                    "caption":"<b>Left:</b> Madison Gas and Electric Company Blount Generating Station, 1931."
+                }
+            },
+            {
+                "right":{
+                    "body":"For much of the 20th century, the Blount Generation Station, located on the Isthmus, generated power by the burning of coal, which was transported to the city via railroads."
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop5/retaining_wall.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"When movements demanding cleaner energy emerged in the late-20th century, a wall was built to try to make this process less visible. Ultimately, however, the plant transitioned from coal to gas.",
+                    "caption":"<b>Right:</b> Retaining wall outside Madison Gas and Electric Company Blount Generating Station, 2021."
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "background":"rgba(48,48,48,1)",
+            "center":{
+                "img":"stop5/pipeline_map.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "darkBackground":true,
+                    "body":"<b>Interdependencies</b>: Most of the gas that fuels this power plant is imported via underground pipelines from Canada to the North, as well as Oklahoma and the Gulf of Mexico to the South. "
+                }
+            },
+            {
+                "right":{
+                    "darkBackground":true,
+                    "body":"Madison’s energy needs therefore have important implications for these sites, but also, as this map showing leakages and spillages related to those pipelines shows, people who live on land on which the entire energy infrastructure was constructed."
+                }
+            },
+            {
+                "left":{
+                    "darkBackground":true,
+                    "body":"<b>What does this tell us about our responsibilities to people in other parts of the country who are protesting the construction of new pipelines?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"<b>Inequalities</b>: In recent years, countries such as China and India have come under more global scrutiny for their rising CO2 emissions. A significant portion of this increase in emissions is driven by the offshoring of manufacturing to low-wage areas of the world."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "center":{
+                "img":"stop5/emissions_map.png"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "lightBackground":true,
+                    "body":"This map attributes emissions to the place where commodities are consumed rather than produced."
+                }
+            },
+            {
+                "right":{
+                    "lightBackground":true,
+                    "body":"<b>What does it tell you about who is most responsible for reducing carbon emissions?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop5/windmills.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"<b>Alternatives</b>: As climate change has become a more urgent political concern, there have been various efforts to support the expansion of clean energy. "
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop5/renewable_map.png"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"This map shows the proliferation of renewable energy sources in Wisconsin, most prominently through wind farms."
+                }
+            },
+            {
+                "left":{
+                    "body":"<b>What does this reveal about the interconnections between changing landscapes in urban and rural Wisconsin? </b>"
+                }
+            }]
+        }
+    }]
+}

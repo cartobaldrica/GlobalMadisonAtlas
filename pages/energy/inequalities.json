@@ -1,0 +1,76 @@
+{
+    "name":"Energy - Inequalities",
+    "titleImg":"stop5/title.jpg",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "body":"In recent years, countries such as China and India have come under more global scrutiny for their rising CO2 emissions. A significant portion of this increase in emissions is driven by the <a class='network-link' href='#/industry/inequalities'>offshoring of manufacturing</a> to low-wage areas of the world."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "center":{
+                "img":"stop5/emissions_map.png"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "lightBackground":true,
+                    "body":"This map attributes emissions to the place where commodities are consumed rather than produced."
+                }
+            },
+            {
+                "right":{
+                    "lightBackground":true,
+                    "body":"<b>What does it tell you about who is most responsible for <a class='network-link' href='#/energy/alternatives'>reducing carbon emissions</a>?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.07917178776996,-89.37285564506148],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"power_plant",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"power_plant",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"power_plant"
+                }]
+            }
+        }
+    }]
+}

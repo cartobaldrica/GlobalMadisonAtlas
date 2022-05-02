@@ -1,0 +1,72 @@
+{
+    "name":"Industry - Inequalities",
+    "titleImg":"stop4/title.jpg",
+    "background":"light",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "body":"The international division of labor in manufacturing has changed dramatically since the second half of the 20th century. Shoes that are sold in Madison today were more likely produced in <a class='network-link' href='#/industry/alternatives'>factories in south/southeast Asia</a> or South America."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "center":{
+                "img":"stop4/nike_map.png"
+            }
+        },
+        "foreground":{
+            "blocks": [
+            {
+                "center":{
+                    "lightBackground":true,
+                    "body":"<b>Why do you think major brands, such as Nike, choose to have their shoes made in these locations, rather than in cities like Madison?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.08128634666694,-89.37861838470612],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"shoe_factory",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"shoe_factory",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"shoe_factory"
+                }]
+            }
+        }
+    }]
+}

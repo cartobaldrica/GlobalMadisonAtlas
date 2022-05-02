@@ -1,0 +1,76 @@
+{
+    "name":"Action - Interdependencies",
+    "titleImg":"stop7/title.jpg",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "body":"The protests that have taken place in the capitol have both been inspired by and expressed solidarity with protests in <a class='network-link' href='#/industry/alternatives'>other parts of the world</a>. "
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop7/act10.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [
+            {
+                "right":{
+                    "body":"For example, during the Act 10 protests of 2011, some commentators and activists made connections with protests against austerity, inequality, and corruption in places as diverse as Zuccotti Park, New York and Tahrir Square, Egypt.",
+                    "caption":"<b>Left:</b> Act 10 Protests, 2011"
+                }
+            },
+            {
+                "right":{
+                    "body":"<b>What other <a class='network-link' href='#/action/inequalities'>global issues</a> have catalyzed people to congregate and express their anger or desire for change?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.07471406778965,-89.38591347037851],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"state_capitol",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"state_capitol",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"state_capitol"
+                }]
+            }
+        }
+    }]
+}

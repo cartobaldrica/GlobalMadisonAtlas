@@ -1,0 +1,84 @@
+{
+    "name":"University of Wisconsin",
+    "titleImg":"stop2/title.jpg",
+    "titleType":"network",
+    "background":"light",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "map":{
+                "center":[43.0757,-89.4037],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"bascom_hill",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"bascom_hill",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"bascom_hill"
+                }]
+            }
+        }
+    },
+    {
+        "type":"row",
+        "right":{
+            "img":"stop2/title.jpg"
+        },
+        "left":{
+            "body":"When Wisconsin achieved statehood in 1848, one of its first major political acts was to establish the University of Wisconsin, the Madison campus of which directly faces the <a class='network-link' href='#/action/intro'>Capitol</a>.",
+            "caption":"<b>Right:</b> Lincoln statue in front of Bascom Hall, UW-Madison."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop2/bascom_hill.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"In 1904, the university pioneered the <a class='network-link' href='#/university/interdependencies'>Wisconsin Idea</a>, which has become a key part of its identity. At its core, that idea is that “the boundaries of the university are the boundaries of the state,” or that the teaching and research undertaken at the university should provide benefits beyond the campus."
+                }
+            },
+            {
+                "right":{
+                    "body":"It is now generally acknowledged that this principle is national and global in scope. A more critical understanding of this idea, recognizes both how the campus has impacted the State and the wider world, and how the State and the world have continually <a class='network-link' href='#/industry/alternatives'>reshaped the university</a>."
+                }
+            },
+            {
+                "right":{
+                    "body":"While some of these <a class='network-link' href='#/university/interdependencies'>interconnections</a> have generated mutual benefits, others have reflected and reinforced <a class='network-link' href='#/university/inequalities'>inequalities</a>."
+                }
+            }]
+        }
+    }]
+}

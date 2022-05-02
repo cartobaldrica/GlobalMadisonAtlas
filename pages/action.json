@@ -1,0 +1,167 @@
+{
+    "name":"Wisconsin Capitol",
+    "titleImg":"stop7/title.jpg",
+    "titleType":"scroll",
+    "content":[
+    {
+        "type":"row",
+        "full":true,
+        "center":{
+            "map":{
+                "center":[43.07471406778965,-89.38591347037851],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"state_capitol",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"state_capitol",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"state_capitol"
+                }]
+            }
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "center":{
+                "fit":"cover",
+                "img":"stop7/capitol.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "center":{
+                    "lightBackground":true,
+                    "body":"The current state capitol, designed by Architect George Post who also designed the New York Stock Exchange building, was built between 1906 and 1917. After a fire destroyed the previous, smaller building, many thought the new 400,000-square-foot granite building was excessive."
+                }
+            },
+            {
+                "right":{
+                    "lightBackground":true,
+                    "body":"The capitol underwent major renovations, costing $140 million,  between 1990 and 2001, which restored rooms to their original appearances and added modern amenities."
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"The heavily visited building, toured by over 50,000 Wisconsin school children each year, has also been home to many political actions. In 2011, tens of thousands of demonstrators protesting “Act 10”, the governor’s proposal effectively ending collective bargaining rights for public employees occupied the building and its surrounds. "
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop7/blm.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"More recently, demonstrators gathered around the capitol building and surrounding areas in support of the Black Lives Matter movement, which exploded nationally in response to the killing of George Floyd, a Black man, by police in Minneapolis, MI in May 2020. Later that year, protesters again gathered when Jacob Blake was shot by police in Kenosha, WI.",
+                    "caption":"<b>Right:</b> Black Lives Matter demonstrators in Madison, May 2020"
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop7/act10.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"<b>Interdependencies</b>: The protests that have taken place in this building have both been inspired by and expressed solidarity with protests in other parts of the world. ",
+                    "caption":"<b>Left:</b> Act 10 Protests, 2011"
+                }
+            },
+            {
+                "right":{
+                    "body":"For example, during the Act 10 protests of 2011, some commentators and activists made connections with protests against austerity, inequality, and corruption in places as diverse as Zuccotti Park, New York and Tahrir Square, Egypt."
+                }
+            },
+            {
+                "right":{
+                    "body":"<b>What other global issues have catalyzed people to congregate and express their anger or desire for change?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop7/womens_march.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"<b>Inequalities</b>: More recently, people have gathered to protest systemic injustices based on gender and race. This includes the 2017 Women’s March and the Black Lives Matter protests in 2020. ",
+                    "caption":"<b>Right:</b> Women's March, 2017"
+                }
+            },
+            {
+                "left":{
+                    "body":"<b>How do such protests draw attention to ongoing reproduction of internal differences and inequities within Madison? How have these inequalities been challenged or sustained by Madison’s shifting global interdependencies?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop7/murals.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"<b>Alternatives</b>: State Street was turned from a 4 lane street to a pedestrian mall in the mid 70s, is a nexus for change. During the Covid-19 pandemic, about 20% (31/150) of the businesses on State Street closed.",
+                    "caption":"<b>Left:</b> Black Lives Matter murals on State Street, Summer 2020"
+                }
+            },
+            {
+                "right":{
+                    "body":"Additionally, about half of the storefronts were damaged during Black Lives Matter Protests in 2020. Many of these storefronts became murals expressing solidarity with Madisonians who protested for social justice and equity. The protests and murals made visible histories and current experiences of racial exclusion in Madison that many residents are unaware of."
+                }
+            },
+            {
+                "right":{
+                    "body":"<b>What role do you think political protests can play in changing the social and physical landscapes that surround us?</b>"
+                }
+            }]
+        }
+    }]
+}

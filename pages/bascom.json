@@ -1,0 +1,35 @@
+{
+    "name":"Stop 1 - Bascom Hill Boulder",
+    "color":"#993333",
+    "background":"light",
+    "content":[{
+        "type":"row",
+        "center":{
+            "body":"Today, I am going to be your guide for an interactive walking tour in Madison. On this tour, we will explore the social and physical landscapes of the campus, the capitol, and the near east side of the city. In doing so, we will develop what the Geographer Doreen Massey called “a global sense of place”."
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"The tour is designed to help you develop a global sense of the place where we live - Madison. First, you will see how Madison, like any city, has been shaped by its interdependencies with other economies and ecologies around the world. Most case studies of globalization focus on megacities such as New York or Tokyo. But the landscape in Madison also bears the marks of various rounds of regional and global economic restructuring."
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"Second, by mapping these interdependencies, you will identify the relationship between global economic integration and rising inequalities. Madison occupies a relatively privileged position within global networks of production and trade. But Madison’s prosperity always has been bound together with the impoverishment of other people and places. Moreover, global interdependencies have often exacerbated social-economic inequalities within Madison."
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"Third, by grounding the global issues in the landscape that surrounds you, I hope to dispel the idea that globalization is something that happens “out there”, beyond our control. Ultimately, the world economy works the way it does because of decisions people make about what to buy, where to invest their money, what political causes to support. If those actions are not promoting the wellbeing of the community and the planet, we can think about alternatives. I want you to reflect on how your own everyday actions impact the lives of others―including those who may otherwise seem distant."
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"The granite boulder you see commemorates a key aspect of the university’s identity: the Wisconsin Idea. We'll learn more about the Wisconsin Idea by at our second stop."
+        }
+    }]
+}

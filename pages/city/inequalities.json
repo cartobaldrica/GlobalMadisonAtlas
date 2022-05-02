@@ -1,0 +1,76 @@
+{
+    "name":"City - Inequalities",
+    "titleImg":"stop3/title.jpg",
+    "background":"light",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "body":"In Madison, and globally, some people are more vulnerable than others to the effects of flooding and other extreme climate events."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop3/flooding.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"This image show how this precarious <a class='network-link' href='#/city/interdependencies'>interdependency</a> has led to flooding in this neighborhood, most recently in 2018.",
+                    "caption":"<b>Left:</b> Flooding on Mifflin street in 2018"
+                }
+            },
+            {
+                "right":{
+                    "body":"<b>What factors do you think are important in producing unequal degrees of vulnerability?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.075671391639354,-89.38309259550543],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"map_fountain",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"map_fountain",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"map_fountain"
+                }]
+            }
+        }
+    }]
+}

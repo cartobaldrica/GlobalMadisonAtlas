@@ -1,0 +1,76 @@
+{
+    "name":"City - Interdependencies",
+    "titleImg":"stop3/title.jpg",
+    "background":"light",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "body":"The expansion of the city created a critical interdependency between the physical topography of the city and the <a class='network-link' href='#/city/intro'>built environment</a>."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop3/madison_landforms.png"    
+            }
+        },
+        "foreground":{
+            "blocks": [
+            {
+                "left":{
+                    "body":"As this map shows, the isthmus neighborhood, which lies between Lake Monona and Lake Mendota, was built on top of filled marshland."
+                }
+            },
+            {
+                "left":{
+                    "body":"<b>In what ways do you think that interdependence has become more <a class='network-link' href='#/city/inequalities'>critical</a> in recent decades?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.075671391639354,-89.38309259550543],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"map_fountain",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"map_fountain",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"map_fountain"
+                }]
+            }
+        }
+    }]
+}

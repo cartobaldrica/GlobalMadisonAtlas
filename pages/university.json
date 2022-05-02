@@ -1,0 +1,180 @@
+{
+    "name":"Bascom Hill",
+    "titleImg":"stop2/title.jpg",
+    "background":"light",
+    "titleType":"scroll",
+    "content":[
+    {
+        "type":"row",
+        "full":true,
+        "center":{
+            "map":{
+                "center":[43.0757,-89.4037],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"bascom_hill",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"bascom_hill",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"bascom_hill"
+                }]
+            }
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"When Wisconsin achieved statehood in 1848, one of its first major political acts was to establish the University of Wisconsin, the Madison campus of which directly faces the Capitol."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop2/bascom_hill.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"In 1904, the university pioneered the Wisconsin Idea, which has become a key part of its identity. At its core, that idea is that “the boundaries of the university are the boundaries of the state,” or that the teaching and research undertaken at the university should provide benefits beyond the campus."
+                }
+            },
+            {
+                "right":{
+                    "body":"It is now generally acknowledged that this principle is national and global in scope. A more critical understanding of this idea, recognizes both how the campus has impacted the State and the wider world, and how the State and the world have continually reshaped the university."
+                }
+            },
+            {
+                "right":{
+                    "body":"While some of these interconnections have generated mutual benefits, others have reflected and reinforced inequalities."
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop2/dairy_prod.png"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"<b>Interdependencies</b>: Research undertaken at UW-Madison has long played a key role in transforming society across the State and beyond."
+                }
+            },
+            {
+                "left":{
+                    "body":"At the turn of the 20th century, researchers at the University of Wisconsin studied new methods of dairy processing. Their research spurred a massive rise in the state's dairy production, molding Wisconsin's identity as 'America's Dairyland'."
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop2/steenbock.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [
+            {
+                "right":{
+                    "body":"Later, in the 1920s, Dr. Harry Steenbock developed an inexpensive method of enriching foods with Vitamin D, an innovation that would ultimately help to eradicate rickets throughout most of the world.",
+                    "caption":"<b>Right:</b> Dr. Harry Steenbock working in his lab."
+                }
+            },
+            {
+                "right":{
+                    "body":"Royalties from the patent funded the construction of a library named in his honor."
+                }
+            },
+            {
+                "right":{
+                    "body":"<b>In what other ways do you think the work that happens at the university might have implications for other parts of the State or even the world?<b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"<b>Inequalities</b>: In addition to the university – and the city – being built on Ho Chunk land, the Land-Grant College Act (or Morrill Act), passed by Congress in 1862, gave universities land that had been expropriated from indigenous communities to States to help finance the establishment of colleges."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop2/land_grab.png"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"This map shows where the land that helped develop this campus came from, as well as other land in Wisconsin that was exproproiated for the development of universitites throughout the country. "
+                }
+            },
+            {
+                "left":{
+                    "body":"These lands were obtained by the federal government through violence-backed cession, and much of it is still owned by the university to this day."
+                }
+            },
+            {
+                "left":{
+                    "body":"<b>To what extent do you think the university has been a vehicle for generating regional inequalities?</b>"
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "body":"<b>Alternatives</b>: In recent years, the reading of a Land Acknowledgement, recognizing that the University is founded on and financed by stolen land, has become increasingly common on campus."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop2/plaque.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"<b>What responsibilities do you think this university (and others) bear for rectifying these deep-rooted injustices?</b>"
+                }
+            }]
+        }
+    }]
+}

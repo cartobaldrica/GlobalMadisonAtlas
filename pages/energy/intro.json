@@ -1,0 +1,95 @@
+{
+    "name":"Blount Generating Station",
+    "titleImg":"stop5/title.jpg",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "map":{
+                "center":[43.07917178776996,-89.37285564506148],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"power_plant",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"power_plant",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"power_plant"
+                }]
+            }
+        }
+    },
+    {
+        "type":"row",
+        "right":{
+            "img":"stop5/title.jpg"
+        },
+        "left":{
+            "body":"The <a class='network-link' href='#/city/intro'>development of the isthmus</a> also depended on increasing the supply of energy in the city. The first gaslights appeared along these streets in 1855, and the first electrical lighting arrived in the 1880s.",
+            "caption":"<b>Right:</b> Railroad door to the Blount Generating Station, operated by Madison Gas and Electric."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "left":{
+                "img":"stop5/coal_plant.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "right":{
+                    "body":"Over the years, the city’s energy needs have been shaped by wider political-ecological crises, most notably <a class='network-link' href='#/city/inequalities'>climate change</a>. Our changing climate and changing energy needs have created new <a class='network-link' href='#/energy/interdependencies'>interdependencies</a> between Madison and other economies and ecologies around the world.",
+                    "caption":"<b>Left:</b> Madison Gas and Electric Company Blount Generating Station, 1931."
+                }
+            },
+            {
+                "right":{
+                    "body":"For much of the 20th century, the Blount Generation Station, located on the Isthmus, generated power by the burning of coal, which was transported to the city via <a class='network-link' href='#/transport/intro'>railroads</a>."
+                }
+            }]
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop5/retaining_wall.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [{
+                "left":{
+                    "body":"When <a class='network-link' href='#/action/intro'>movements</a> demanding <a class='network-link' href='#/energy/alternatives'>cleaner energy</a> emerged in the late-20th century, a wall was built to try to make this process less visible. Ultimately, however, the plant transitioned from coal to gas.",
+                    "caption":"<b>Right:</b> Retaining wall outside Madison Gas and Electric Company Blount Generating Station, 2021."
+                }
+            }]
+        }
+    }]
+}

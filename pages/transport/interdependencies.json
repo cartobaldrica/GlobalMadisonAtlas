@@ -1,0 +1,71 @@
+{
+    "name":"Transport - Interdependences",
+    "titleImg":"stop6/title.jpg",
+    "titleType":"network",
+    "content":[
+    {
+        "type":"start",
+        "center":{
+            "body":"The Chicago and Northwestern Train Station in downtown Madison was a nexus for travelers coming and leaving from Madison, as well as industrial goods."
+        }
+    },
+    {
+        "type":"scroll",
+        "background":{
+            "right":{
+                "img":"stop6/station.jpg"
+            }
+        },
+        "foreground":{
+            "blocks": [
+            {
+                "left":{
+                    "body":"<b>What cities do you think were connected to Madison by railroad in the early twentieth century, and <a class='network-link' href='#/transport/inequalities'>how has this changed</a> over time?</b>",
+                    "caption":"<b>right:</b> Chicago and Northwestern Train Station circa 1910."
+                }
+            }]
+        }
+    },
+    {
+        "type":"row",
+        "center":{
+            "map":{
+                "center":[43.07632022157961,-89.37554236478161],
+                "zoom":16,
+                "maxZoom":17,
+                "minZoom":15,
+                "basemap":{
+                    "url":"https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    "attribution":"&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors &copy; <a href='https://carto.com/attributions'>CARTO</a>"
+                },
+                "layers":[{
+                    "src":"pois",
+                    "type":"point",
+                    "fillType":"categorized",
+                    "fillColor":[{
+                        "value":"train_station",
+                        "output":"color"
+                    },
+                    {
+                        "value":"default",
+                        "output":"#ff6666"
+                    }],
+                    "expressedC":"classname",
+                    "color":"white",
+                    "opacity":1,
+                    "fillOpacity":1,
+                    "radius":[{
+                        "value":"train_station",
+                        "output":9
+                    },
+                    {
+                        "value":"default",
+                        "output":4
+                    }],
+                    "tooltipField":"title",
+                    "tooltipFilter":"train_station"
+                }]
+            }
+        }
+    }]
+}
